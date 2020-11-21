@@ -15,6 +15,13 @@ Step 3: Change Permission:
         export PATH=$PATH:$GOPATH/bin
         export PATH=$PATH:/usr/local/go/bin
         
+        OR
+        
+        # Golang paths in bashrc
+        export GOROOT=/usr/local/go
+        export GOPATH=$HOME/go
+        export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+        
         Save
         
         type in terminal: . ~/.profile
