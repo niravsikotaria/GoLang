@@ -1,0 +1,24 @@
+How to install Go Lang:
+
+Step 1: Open golang.org/dl/
+        Download Lastest Version Of Go Linux.
+
+Step 2: Open Terminal 
+        tar -xvf go tab -C /usr/local
+        
+Step 3: Change Permission:
+        chown -R root:root /usr/local/go/
+        gedit ~/.profile
+        
+        Notepade will Open and paste this line after True
+       
+        export PATH=$PATH:$GOPATH/bin
+        export PATH=$PATH:/usr/local/go/bin
+        
+        Save
+        
+        type in terminal: . ~/.profile
+        
+        go version
+        
+ Finish:
