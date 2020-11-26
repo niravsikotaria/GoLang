@@ -34,3 +34,13 @@ Step 3: Change Permission:
 Update Python Version in Kali Linux 2019.2
 
 https://exitcode0.net/kali-linux-how-to-upgrade-python-2-7-to-python-3-7/
+
+From Terminal:
+        Open Terminal
+        ls /usr/bin/python*
+        alias python='/usr/bin/python3.8'
+        python --version
+        
+        OR
+        
+        update-alternatives --config python
