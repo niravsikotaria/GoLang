@@ -1,34 +1,30 @@
-How to install Go Lang:
 
-Step 1: Open golang.org/dl/
-        Download Lastest Version Of Go Linux.
+How to install Go Lang in Kali.
 
-Step 2: Open Terminal 
-        tar -xvf go tab -C /usr/local
-        
-Step 3: Change Permission:
-        chown -R root:root /usr/local/go/
-        gedit ~/.profile
-        
-        Notepade will Open and paste this line after True
-       
-        export PATH=$PATH:$GOPATH/bin
-        export PATH=$PATH:/usr/local/go/bin
-        
-        OR
-        
-        # Golang paths in bashrc
-        export GOROOT=/usr/local/go
-        export GOPATH=$HOME/go
-        export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-        
-        Save
-        
-        type in terminal: . ~/.profile
-        
-        go version
-        
- Finish:
+Open CMD:
+
+sudo apt update
+
+sudo apt upgrade
+
+*****************************
+
+sudo apt install golang-go
+
+echo $PATH
+
+go env | grep GOPATH  # copy go path and paste into .zshrc
+
+nano ~/.zshrc
+
+export PATH="$PATH:********/bin"
+
+source ~/.zshrc
+
+********************************
+sudo rm /usr/bin/httpx
+
+---------------------------------------------------------------------------
 
 
 Update Python Version in Kali Linux 2019.2
